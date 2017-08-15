@@ -38,10 +38,19 @@ public class TesteCalculadora {
 	
 	@Test
 	public void criaCalculadoraComValorESubtrai(){
-		calculadora = new calculadora(10);
+		calculadora = new Calculadora(10);
 		calculadora.Subtrair(5);
 		assertEquals(calculadora.getResultado(), 5, 0);
 	}
+	
+	@Test
+	public void criaCalculadoraEMultiplica(){
+		calculadora = new Calculadora(5);
+		calculadora.Multiplica(5);
+		assertEquals(calculadora.getResultado(), 25, 0);
+	}
+	
+	
 	
 	@Test
 	public void criaCalculadoraComValorInicial() {
